@@ -1,7 +1,7 @@
 # Election_analysis
 
 ## Project Overview
-A Colorado Board of Elections employess has provided the following tasks to complete the elections audit of a recent local congressional election. 
+A Colorado Board of Elections employess has provided election data to complete the elections audit of a recent local congressional election. The employess requested to use Python to complete the audit to automate the process. The task was to determine the winner by popular vote. Information regarding county turnout and percentage of votes were also obtained.
  
 
 ## Resources

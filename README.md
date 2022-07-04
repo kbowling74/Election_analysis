@@ -2,12 +2,7 @@
 
 ## Project Overview
 A Colorado Board of Elections employess has provided the following tasks to complete the elections audit of a recent local congressional election. 
-
-1. Calculate the total number of votes cast. 
-2. Get a complete list of candidates who recieved votes. 
-3. Calculate the total number of votes each candidate recieved.
-4. Calculate the percentage of votes each candidate won. 
-5. Determine the winner of the election based on popular vote. 
+ 
 
 ## Resources
 - Data Source: election_reults.csv
@@ -15,18 +10,23 @@ A Colorado Board of Elections employess has provided the following tasks to comp
 
 ## Summary
 The analysis of the election show that:
-- There were X votes cast in the election.
-- The candidates were:
-    - CAN 1
-     - Can 2
-    -Can 3
+- There were 369,711 votes cast in the election.
+- The results based on county were:
+    - Jefferson county had 10.5% of the votes with 38,855 votes in total. 
+    - Denver county had 82.8% of the votes with 306,055 votes in total.
+    - Arapahoe county had 6.7% of the votes with 24,801 votes in toal. 
+- Denver county had the largest number of votes with 306, 055 votes. 
 - The candidate results were:
-    - Can 2 recieved x% of the vote and Y number of votes
-    Can 2 recieved x% of the vote and Y number of votes
-    Can 2 recieved x% of the vote and Y number of vote
+    - Charles Casper Stockholm recieved 23.0% of the vote and 85,213 number of votes
+    - Diana DeGette recieved 73.8% of the vote and 272,892 number of votes
+    - Raymon Anthony Doane recieved 3.1% of the vote and 11,606 number of votes
 - The winner of the election was:
-  - Candidate 1 2 3 who recieved X% of the vote and Y number of votes. 
-  
-  ## Challenge Overview
-  
+  - Diana DeGette who recieved 73.8% of the vote and 272,892 number of votes. 
+
   ## Challenge Summary
+Python code was used to analyze data provided in a .csv file of election data for a local congressional election in Colorado. The code was used to determine the winner of the election through popular vote. With the python code, vote totals for each candidate were tallied using for loops and if statements. This method was also used for tallying county turnout percentages and totals. All of the results were save into a text file for documentation. 
+
+This same script could be modified and used in other scenarios regarding elections. If an election involved a third party with multiple candidates (as opposed to single candidates for the 2 major parties), it would be able to tally both number of votes and percentage of votes for those in the third party. This could be done by creating a new list for third party candidate names and a dictionary for votes cast for the candidates in the third party, disregarding the 2 major party candidates and their votes recieved. Then using the same for and if statements in the script for determing percentages and counts while replacing the variable names for the third party candidates, it would return the third party candidate results. 
+
+This code could also be used, if provided the data, to determine votes based on party affiliation. Another for loop could be added to loop through the party affiliation in the data and tally for each party. A list and dictionary would need to be added with the correct variables accounting for part name and votes.  
+
